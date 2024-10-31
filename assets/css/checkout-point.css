@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+/*modal*/
+/* The Modal (background) */
+.pickit-point-selection.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;    
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content/Box */
+  .pickit-point-selection .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    /*margin: 5% auto; *//* 15% from the top and centered */
+    padding: 20px;
+    width: 95%; /* Could be more or less, depending on screen size */
+    /*max-width: 500px;*/
+    border-radius: 16px;
+    min-height: 325px;
+    color: #2D2D2D;
+    font-family: 'Mulish', sans-serif; 
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    vertical-align: middle;  
+    /*max-height: 90vh;*/
+    height: 95%;   
+    
+  }
+
+  .pickit-point-selection.modal iframe{
+    overflow: hidden;
+  }
+  .pickit-point-selection .three-col{
+    max-height: 60vh;
+    overflow: auto; /* Enable scroll if needed */   
+  }
+  /*Scrollbar*/
+  /* width */
+    .pickit-point-selection .three-col::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .pickit-point-selection .three-col::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fefefe; 
+
+  }
+   
+  /* Handle */
+  .pickit-point-selection .three-col::-webkit-scrollbar-thumb {
+    background: #2D2D2D; 
+
+  }
+  
+  /* Handle on hover */
+  .pickit-point-selection .three-col::-webkit-scrollbar-thumb:hover {
+    background: #2D2D2D; 
+  }
+
+  .pickit-point-selection .three-col  h2{
+      font-size: 24px;
+  }
+    
+  .pickit-point-selection .three-col  p{
+    font-size: 16px;
+}
+  /* The Close Button */
+  .pickit-point-selection .close {
+    color: #2D2D2D;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .pickit-point-selection .close:hover,
+  .pickit-point-selection .close:focus {
+    color: #2D2D2D;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .pickit-point-selection .three-col .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .pickit-point-selection .three-col .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

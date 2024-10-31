@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+body{
+    background-color: white;
+    height: 100%;
+}
+
+#wpcontent{
+    padding:0px;
+}
+
+.notice{
+    display:none;
+}
+
+.pickit{
+    vertical-align: middle;     
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pickit-container{
+    background-color: white;
+    position:relative;
+    top:0;
+    left:0;
+    width: 98%;
+    
+    margin: auto;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;         
+    color: #2D2D2D; 
+}
+
+/*modal*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;    
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 16px;  
+    min-height: 325px;
+    color: #2D2D2D;
+    font-family: 'Mulish', sans-serif; 
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    vertical-align: middle;     
+  }
+  
+  .modal-content  h2{
+      font-size: 24px;
+  }
+    
+  .modal-content  p{
+    font-size: 16px;
+}
+  /* The Close Button */
+  .close {
+    color: #2D2D2D;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #2D2D2D;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #pickit-ok button{
+      background-color: #04CE6D;
+      border-radius: 50px;
+      border: 0px;
+      color: white;    
+      height: 40px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-top: 20px;
+  }
+  #pickit-ok button:hover{
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #04CE6D;
+    color: #04CE6D;    
+    cursor: pointer;
+}
+
+#pickit-error button{
+    background-color: #FF1515;
+    border-radius: 50px;
+    border: 0px;
+    color: white;    
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+}
+#pickit-error button:hover{
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid #FF1515;
+  color: #FF1515;    
+  cursor: pointer;
+}
